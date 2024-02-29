@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}
+    <title>บุคคลต้นแบบ</title>
+{% endblock %}
+
+{% block content %}
+<h1><i class="fa-solid fa-thumbs-up"></i> บุคคลต้นแบบ</h1>
+<div class="container">
+    <div class="row row-cols-2">
+        <div class="col">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title"><img src="{% static 'images/Arthur.jpg' %}" class="img-fluid" style="max-width: 500px; height: 350px;"><hr><i class="fa-solid fa-users"></i> Arthur Morgan คาวบอย Van der lin</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title"><img src="{% static 'images/Drose.jpg' %}" class="img-fluid" style="max-width: 580px; height: 350px;"><hr><i class="fa-solid fa-users"></i> Derrick Rose นักบาส MVP </h5>
+                </div>
+            </div>
+        </div>
+    </div>    
+</div>
+
+  
+{% endblock %}

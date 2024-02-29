@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}
+    <title>สิ่งที่สนใจ</title>
+{% endblock %}
+
+{% block content %}
+<h1><i class="fa-solid fa-face-smile"></i> สิ่งที่สนใจ</h1>
+<div class="container">
+    <div class="row row-cols-2">
+        <div class="col">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title"><img src="{% static 'images/travel.png' %}" class="img-fluid" style="max-width: 500px; height: 300px;"> <hr><i class="fa-solid fa-map"></i>สนใจเกี่ยวกับการท่องเที่ยวเกี่ยวกับป่าหรือภูเขาเพราะมีอากาศที่ดีทำให้รู้สึกผ่อนคลาย </h5>
+                </div>
+            </div>
+        </div>
+    </div>    
+</div>
+<div class="container">
+    <div class="row row-cols-2">
+        <div class="col">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title"><img src="{% static 'images/tft.jpg' %}" class="img-fluid" style="max-width: 500px; height: 300px;"> <hr><i class="fa-solid fa-map"></i>เกม TFT เกมแทคติกที่สนุกและน่าค้นหา </h5>
+                </div>
+            </div>
+        </div>
+    </div>    
+</div>
+{% endblock %}

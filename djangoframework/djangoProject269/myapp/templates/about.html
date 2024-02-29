@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}
+    <title>ประวัติการศึกษา</title>
+{% endblock %}
+
+{% block content %}
+<h1><i class="fa-solid fa-circle-user"></i>ประวัติการศึกษา</h1>
+<div class="container">
+    <div class="row row-cols-2">
+        <div class="col">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title"><img src="{% static 'images/ptk.jpg' %}" class="img-fluid" style="max-width: 100%; height: auto;"><hr><i class="fa-solid fa-book"></i> จบการศึกษาชั้นมัธยมศึกษาจากโรงเรียนปทุมเทพวิทยาคาร</h5>
+                </div>
+            </div>
+        </div>
+    </div>  
+</div>
+<div class="container">
+    <div class="row row-cols-2">
+        <div class="col">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title"><img src="{% static 'images/rmuti.jpg' %}" class="img-fluid" style="max-width: 700px; height: 420px;"><hr><i class="fa-solid fa-book"></i> ปัจจุบันกำลังศึกษาอยู่ที่มหาวิทยาลัยราชมงคลอีสานวิทยาเขตขอนแก่น</h5>
+                </div>
+            </div>
+        </div>
+    </div>  
+</div>   
+{% endblock %}
+
+
